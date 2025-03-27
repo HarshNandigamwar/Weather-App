@@ -1,4 +1,4 @@
-//const apiKey = "";
+const apiKey = "Your api key";
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
@@ -11,7 +11,6 @@ async function checkweather(city) {
 
   if (response.status == 404) {
     document.querySelector(".error").style.display = "block";
-    alert("*Invalid city name");
     document.querySelector(".weather").style.display = "none";
   } else {
     var data = await response.json();
