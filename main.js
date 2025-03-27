@@ -12,6 +12,7 @@ async function checkweather(city) {
   if (response.status == 404) {
     document.querySelector(".error").style.display = "block";
     document.querySelector(".weather").style.display = "none";
+    document.body.style.backgroundImage = "url('./images/bg1.jpg')";
   } else {
     var data = await response.json();
 

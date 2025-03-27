@@ -20,6 +20,7 @@ body {
   max-width: 470px;
   background: rgba(0, 0, 0, 0.2);
   color: #fdfdfd;
+  border: 1px solid #fff;
   border-radius: 10px;
   padding: 40px 35px;
   text-align: center;
@@ -97,7 +98,7 @@ body {
   margin-top: -6px;
 }
 .weather {
-  display: none;
+  display: block;
 }
 .error {
   text-align: left;
@@ -117,5 +118,15 @@ body {
   }
   .search button img {
     width: 16px;
+  }
+  .col {
+    margin-left: 10px;
+  }
+  .col img {
+    width: 20px;
+    margin-right: 5px;
+  }
+  .col > div > p {
+    font-size: 15px;
   }
 }
