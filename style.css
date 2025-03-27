@@ -98,7 +98,7 @@ body {
   margin-top: -6px;
 }
 .weather {
-  display: block;
+  display: none;
 }
 .error {
   text-align: left;
