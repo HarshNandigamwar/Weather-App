@@ -17,16 +17,16 @@ body {
 }
 .net {
   height: 30px;
-  width: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ max-width:400px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-radius: 9px;
   color: white;
   border: 1px solid rgb(43, 255, 0);
-  /* background-color: #e40909; */
-  margin-bottom: 90px;
+  /* margin-bottom: 90px; */
   font-size: larger;
+  display: none;
 }
 .card {
   width: 90%;

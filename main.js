@@ -1,4 +1,4 @@
-//const apiKey = "";
+const apiKey = "";
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
@@ -7,20 +7,37 @@ const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 let weatherIcon = document.querySelector(".weather-icon");
 
-// Check device is offline or not.
+// const btn = document.querySelector(".btn");
+
+// function bt(){
+//   console.log("hello");
+  
+// }
+
+// btn.addEventListener("click", () => {
+//   bt();
+// });
+
+
+// getting data from openweathermap url.
+async function checkweather(city) {
+
+  // Check device is offline or not.
 const Net = navigator.onLine;
 if (Net) {
   document.querySelector(".net").innerHTML = "online";
   document.querySelector(".net").style.backgroundColor = "Green"
   document.querySelector(".net").style.display = "none";
   document.querySelector(".card").style.display = "block";
+  document.querySelector(".net").style.display = "none";
 } else {
   document.querySelector(".card").style.display = "none";
-  document.querySelector(".net").innerHTML = "Sorry you are offline 🌐";
+  document.querySelector(".net").style.backgroundColor = "red";
+  document.querySelector(".net").style.display = "block";
+  document.querySelector(".net").innerHTML = "Sorry you are offline 🛜 plz reload page";
 }
 
-// getting data from openweathermap url.
-async function checkweather(city) {
+
   const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
 
   if (response.status == 404) {
