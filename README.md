@@ -1,6 +1,9 @@
-## 🎇 Weather App
+## ☁️ Weather App
+- Experience weather like never before with our beautifully designed, user-friendly Weather App. Built with HTML, CSS, and JavaScript, this app offers a seamless interface and an engaging design that makes checking the weather a delightful experience.
 
-Experience weather like never before with our beautifully designed, user-friendly Weather App. Built with HTML, CSS, and JavaScript, this app offers a seamless interface and an engaging design that makes checking the weather a delightful experience.
+![Weather 1](./images/Weather1.png)
+![Weather 2](./images/Weather2.png)
+
 
 ## ⭕ Key Features
 

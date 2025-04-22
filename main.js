@@ -23,8 +23,8 @@ let weatherIcon = document.querySelector(".weather-icon");
 async function checkweather(city) {
 
   // Check device is offline or not.
-const Net = navigator.onLine;
-if (Net) {
+ 
+if (navigator.onLine) {
   document.querySelector(".net").innerHTML = "online";
   document.querySelector(".net").style.backgroundColor = "Green"
   document.querySelector(".net").style.display = "none";
@@ -34,7 +34,7 @@ if (Net) {
   document.querySelector(".card").style.display = "none";
   document.querySelector(".net").style.backgroundColor = "red";
   document.querySelector(".net").style.display = "block";
-  document.querySelector(".net").innerHTML = "Sorry you are offline 🛜 plz reload page";
+  document.querySelector(".net").innerHTML = "Sorry you are offline 🛜 plz reload page.";
 }
 
 
